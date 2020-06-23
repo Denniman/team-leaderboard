@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://hng.tech/img/fav.png">
+    <title> HNG | Leaderboard</title>
+</head>
+
+<body>
+    <nav id="navbar-white" class="navbar navbar-expand-md">
+        <!-- Brand -->
+        <div class="logo">
+            <img src="https://hng.tech/img/brand-logo.png">
+        </div>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+
+    <main class="bg-primary pt-5 pb-5">
+        <h1 class="text-center text-uppercase text-white">leaderboard</h1>
+        <div class="container d-flex flex-row justify-content-between">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Search">
+              </div>
+        </div>
+        
+        <div class="bg-white container">
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr class="border-bottom">
+                            <th class="text-dark text-uppercase font-weight-bold">rank</th>
+                            <th class="text-dark text-uppercase font-weight-bold">Name</th>
+                            <th class="text-dark text-uppercase font-weight-bold">slack id</th>
+                            <th class="text-dark text-uppercase font-weight-bold">track</th>
+                            <th class="text-dark text-uppercase font-weight-bold">points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pt-5 mt-5">
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td class="border-bar">
+                                <img src="https://ucc.edu.gh/sites/default/files/default_images/img_avatar.png" alt="" class="float-left mr-2"
+                                    style="width: 30px;height: 30px;">
+                                <p class="text-capitalize">brad gibson</p>
+                            </td>
+                            <td>
+                                <p class="text-capitalize">@brad</p>
+                            </td>
+                            <td>
+                                <p class="text-capitalize">front end</p>
+                            </td>
+                            <td>
+                                <p class="text-capitalize">9068</p>
+                            </td>
+                        </tr>
+
+                     
+
+                   
+
+
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
