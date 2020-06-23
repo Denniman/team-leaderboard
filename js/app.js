@@ -23,17 +23,17 @@ const generateUserCard = (users) => {
     </td>
     <td class="border-bar" style="border-left: 5px solid ${COLORS[index]} !important;">
         <img src=${user.image} alt="" class="float-left mr-2"
-            style="width: 40px; height: 40px; border: ${index <= 3 && '2px solid #0DBC36'}"/>
-        <p class="text-capitalize">${user.fullName}</p>
+            style="width: 70px; height: 70px; border: ${index <= 3 && '3px dotted #CF36E3'}"/>
+        <p class="text-capitalize" ${index <= 3 && 'style="color:#CF36E3"'}>${user.fullName}</p>
     </td>
     <td>
-        <p class="text-capitalize">@${user.slackId}</p>
+        <p class="text-capitalize" ${index <= 3 && 'style="color:#CF36E3"'}>@${user.slackId}</p>
     </td>
     <td>
-        <p class="text-capitalize">${user.track}</p>
+        <p class="text-capitalize"${index <= 3 && 'style="color:#CF36E3"'}>${user.track}</p>
     </td>
     <td>
-        <p class="text-capitalize">${user.totalPoints}</p>
+        <p class="text-capitalize"${index <= 3 && 'style="color:#CF36E3"'}>${user.totalPoints}</p>
     </td>
 </tr>
 <br/>
