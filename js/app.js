@@ -1,4 +1,4 @@
-const BASE_URL = "https://next.json-generator.com/api/json/get/4Jb82E9T_";
+const BASE_URL = "https://next.json-generator.com/api/json/get/VyhfN29aO";
 
 const tableBody = document.querySelector('tbody')
 
@@ -6,6 +6,14 @@ const baseColors = `#CF36E3 #E3CF36 #3636E3 #59C36A #4175DF #18A66C #F0381B #36E
 const COLORS = [...baseColors.repeat(3).split(' ')]
 
 
+// const searchBtn = document.querySelector('[type="text"]')
+
+// searchBtn.addEventListener('keyup', filterNames)
+
+// function filterNames() {
+//     let filterValue = searchBtn.value.toUpperCase()
+//     console.log(filterValue)
+// }
 
 const getUsers = async () => {
     const response = await fetch(BASE_URL)
@@ -31,6 +39,9 @@ const generateUserCard = (users) => {
     </td>
     <td>
         <p class="text-capitalize"${index <= 3 && 'style="color:#CF36E3"'}>${user.track}</p>
+    </td>
+    <td>
+        <p class="text-capitalize"${index <= 3 && 'style="color:#CF36E3"'}>${user.email}</p>
     </td>
     <td>
         <p class="text-capitalize"${index <= 3 && 'style="color:#CF36E3"'}>${user.totalPoints}</p>
