@@ -13,7 +13,19 @@ div.logo img{
 
 #usr {
     margin-left: -15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
 }
+
+.fa-search {
+    position: absolute;
+    top: 30%;
+    left: 19%;
+    width: 1.3em;
+}
+
 
 img.mr-2 {
     border-radius: 50%;
@@ -23,6 +35,10 @@ img.mr-2 {
     display: flex !important;
     align-items: center;
     border-left: 5px solid orange !important;
+}
+
+.container {
+    border-radius: 15px;
 }
 
 .border-bar p {
