@@ -1,18 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
 
 
 body {
     background-color: grey;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important; 
 }
-
-
-
 
 div.logo img{
     width: 50%;
     padding: 5px 10px;
 } 
+
+#usr {
+    margin-left: -15px;
+}
 
 img.mr-2 {
     border-radius: 50%;
